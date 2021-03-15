@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserAndPassControllers.CreateNewAccountController">
+   <children>
+      <AnchorPane id="pane" layoutX="-14.0" prefHeight="549.0" prefWidth="1061.0" stylesheets="@../../bin/UserAndPass/application.css">
+         <children>
+            <Separator layoutX="646.0" layoutY="357.0" prefHeight="4.0" prefWidth="415.0" />
+            <Separator layoutX="-3.0" layoutY="130.0" prefHeight="4.0" prefWidth="608.0" />
+            <Circle layoutX="576.0" layoutY="247.0" radius="164.0" stroke="#9a9a9a" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.8952380952380953" startX="0.32857142857142857" startY="0.4380952380952381">
+                     <stops>
+                        <Stop color="#1e62a1" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <TextField fx:id="TxtUsername" layoutX="554.0" layoutY="218.0" promptText="Utilizator...">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="492.0" layoutY="223.0" text="Utilizator" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TxtNewPassword" layoutX="554.0" layoutY="270.0" promptText="Verificare parola...">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="430.0" layoutY="275.0" prefHeight="16.0" prefWidth="120.0" text="Confirmare parola" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Label>
+            <Button id="button_mystyle" fx:id="BtnConfirmation" layoutX="450.0" layoutY="323.0" mnemonicParsing="false" onAction="#BtnConfirmationPressed" stylesheets="@application.css" text="Adaugare" textFill="#125aea">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="486.0" layoutY="113.0" prefHeight="19.0" prefWidth="184.0" text="Creare/Modificare cont" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="HARD_LIGHT" disable="true" fill="#8d8d8d" height="44.0" layoutX="487.0" layoutY="158.0" stroke="#72706f" strokeType="INSIDE" width="206.0" />
+            <Button id="button_mystyle" fx:id="BtnRemove" layoutX="620.0" layoutY="323.0" mnemonicParsing="false" onAction="#BtnRemovePressed" prefHeight="26.0" prefWidth="84.0" stylesheets="@application.css" text="Stergere" textFill="#125aea">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="498.0" layoutY="172.0" text="ID" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TxtID" layoutX="523.0" layoutY="167.0" promptText="*La modif si stergere...">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </TextField>
+            <Button id="button_mystyle" fx:id="BtnModification" layoutX="526.0" layoutY="323.0" mnemonicParsing="false" onAction="#BtnModificationPressed" prefHeight="27.0" prefWidth="90.0" stylesheets="@application.css" text="Modificare" textFill="#125aea">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Button id="button_mystyle" fx:id="BtnViewUsers" layoutX="506.0" layoutY="359.0" mnemonicParsing="false" onAction="#BtnViewUsersPressed" prefHeight="26.0" prefWidth="140.0" stylesheets="@application.css" text="Vizualizare Cont-uri" textFill="#125aea">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="HARD_LIGHT" disable="true" fill="#8d8d8d" height="44.0" layoutX="456.0" layoutY="209.0" stroke="#72706f" strokeType="INSIDE" width="268.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="HARD_LIGHT" disable="true" fill="#8d8d8d" height="44.0" layoutX="423.0" layoutY="261.0" stroke="#72706f" strokeType="INSIDE" width="302.0" />
+            <Button id="button_signout" fx:id="BtnSignOut" layoutX="1007.0" layoutY="14.0" mnemonicParsing="false" onAction="#BtnSignOutPressed" prefHeight="33.0" prefWidth="34.0" text="Leave" textFill="#535454">
+               <font>
+                  <Font name="Century Gothic" size="9.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

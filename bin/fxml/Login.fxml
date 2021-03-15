@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserAndPassControllers.LoginController">
+  
+   <children>
+   <StackPane id="pane" prefHeight="549.0" prefWidth="1061.0" stylesheets="@../../bin/UserAndPass/application.css">
+ 
+</StackPane>
+      <TextField id=" " fx:id="txtUsername" layoutX="721.0" layoutY="14.0" prefHeight="25.0" prefWidth="164.0" promptText="Utilizator...">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPassword" layoutX="887.0" layoutY="14.0" prefHeight="26.0" prefWidth="164.0" promptText="Parola...">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font></PasswordField>
+      <Button id="button_mystyle" fx:id="BtnLogin" layoutX="644.0" layoutY="14.0" mnemonicParsing="false" onAction="#BtnLoginAction" prefHeight="25.0" prefWidth="75.0" stylesheets="@application.css" text="Sign In" textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font></Button>
+      <Label fx:id="lblMessage" layoutX="78.0" layoutY="205.0" prefHeight="17.0" prefWidth="118.0" />
+      <Button id="button_mystyle" fx:id="BtnCancel" layoutX="939.0" layoutY="48.0" mnemonicParsing="false" onAction="#BtnCancelAction" prefHeight="27.0" prefWidth="108.0" stylesheets="@application.css" text="Parasire" textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="22.0" layoutY="4.0" prefHeight="25.0" prefWidth="147.0" text="Gestionare Stiri" textFill="#0c56b2">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutY="42.0" prefHeight="3.0" prefWidth="1054.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="HARD_LIGHT" disable="true" fill="#8d8d8d" height="75.0" layoutX="637.0" layoutY="7.0" stroke="#72706f" strokeType="INSIDE" width="416.0" />
+      <Button id="button_mystyle" fx:id="BtnNewAccount" layoutX="837.0" layoutY="48.0" mnemonicParsing="false" onAction="#BtnNewAccount" prefHeight="27.0" prefWidth="101.0" stylesheets="@../../bin/UserAndPass/application.css" text="Inregistrare" textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="736.0" layoutY="54.0" prefHeight="15.0" prefWidth="85.0" text="Utilizator nou? " textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="935.0" layoutY="250.0" prefHeight="17.0" prefWidth="75.0" text="Bine ai venit!" textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="124.0" layoutY="16.0" prefHeight="25.0" prefWidth="174.0" text="Autentificare" textFill="#909090">
+         <font>
+            <Font name="Century Gothic" size="11.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="HARD_LIGHT" disable="true" fill="#8d8d8d" height="44.0" layoutX="-3.0" layoutY="-1.0" stroke="#72706f" strokeType="INSIDE" width="1064.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="115.0" layoutX="913.0" layoutY="123.0" stroke="BLACK" strokeType="INSIDE" width="118.0" />
+      <ImageView fitHeight="101.0" fitWidth="109.0" layoutX="921.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/UserAndPass/resourceFiles/userpic.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="945.0" layoutY="260.0">
+         <children>
+            <Pane>
+               <children>
+                  <Group />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <StackPane layoutX="14.0" layoutY="522.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <AnchorPane />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <Label layoutX="14.0" layoutY="505.0" prefHeight="17.0" prefWidth="275.0" text="Authors: Chihaia Catalin &amp; Cioaca Andreea" textFill="#bcbcbc">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

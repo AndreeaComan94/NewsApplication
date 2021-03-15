@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuItemsControllers.AddComentsToFriendsWebsitesController">
+   <children>
+      <AnchorPane id="addcomentstofriendswebsites_background" prefHeight="518.0" prefWidth="1057.0" stylesheets="@../UserAndPass/application.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="383.0" layoutX="390.0" layoutY="48.0" opacity="0.36" stroke="WHITE" strokeType="INSIDE" width="634.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="525.0" layoutY="-3.0" opacity="0.67" stroke="BLACK" strokeType="INSIDE" width="1057.0" />
+            <TextArea fx:id="TxtComment" layoutX="417.0" layoutY="282.0" prefHeight="136.0" prefWidth="582.0" promptText="Comentarii...">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </TextArea>
+            <Button id="button_mystyle" fx:id="BtnSelectSite" layoutX="423.0" layoutY="235.0" mnemonicParsing="false" onAction="#BtnSelectSitePressed" prefHeight="26.0" prefWidth="157.0" text="Selecteaza site" textFill="#5a5a5a">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="HARD_LIGHT" disable="true" fill="#d3d3d3" height="213.0" layoutX="590.0" layoutY="59.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="409.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="HARD_LIGHT" disable="true" fill="#8d8d8d" height="74.0" layoutX="417.0" layoutY="197.0" stroke="#6f6f6f" strokeType="INSIDE" width="169.0" />
+            <Button id="button_mystyle" fx:id="BtnMenu" layoutX="423.0" layoutY="206.0" mnemonicParsing="false" onAction="#BtnMenuPressed" prefHeight="27.0" prefWidth="157.0" text="Revenire meniu" textFill="#5a5a5a">
+               <font>
+                  <Font name="Century Gothic" size="10.0" />
+               </font>
+            </Button>
+            <Button id="button_signout" fx:id="BtnSignOut" layoutX="987.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnSignOutPressed" prefHeight="36.0" prefWidth="56.0" text="Sign Out" textFill="#686868" />
+            <ImageView fitHeight="85.0" fitWidth="100.0" layoutX="443.0" layoutY="74.0">
+               <image>
+                  <Image url="@../UserAndPass/comments-logo.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="-2.0" layoutY="417.0" prefHeight="3.0" prefWidth="1002.0" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="18.0" prefHeight="25.0" prefWidth="147.0" text="Gestionare Stiri" textFill="#3a96ff">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="161.0" layoutY="35.0" prefHeight="17.0" prefWidth="120.0" text="Vizualizare Comentarii" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Label>
+            <Button id="button_mystyle" fx:id="BtnPostComment" layoutX="629.0" layoutY="418.0" mnemonicParsing="false" onAction="#BtnPostCommentPressed" prefHeight="26.0" prefWidth="157.0" text="Posteaza" textFill="#5a5a5a">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="TxtDisplaySite" editable="false" layoutX="660.0" layoutY="207.0" prefHeight="25.0" prefWidth="275.0" promptText="www.rss.com" />
+            <ImageView fitHeight="111.0" fitWidth="200.0" layoutX="698.0" layoutY="86.0">
+               <image>
+                  <Image url="@../../bin/UserAndPass/resourceFiles/rss_image.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <TextArea fx:id="TxtCronology" layoutX="51.0" layoutY="86.0" prefHeight="327.0" prefWidth="309.0" promptText="Ultimele postari...">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

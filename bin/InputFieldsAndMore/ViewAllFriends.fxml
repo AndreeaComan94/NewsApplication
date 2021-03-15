@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="selectfriends_background" prefHeight="382.0" prefWidth="255.0" stylesheets="@../../bin/UserAndPass/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InputFieldsAndMoreControllers.ViewAllFriendsController">
+   <children>
+      <AnchorPane>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="382.0" opacity="0.45" stroke="BLACK" strokeType="INSIDE" width="255.0" />
+            <ListView fx:id="listFriends" layoutX="25.0" layoutY="57.0" prefHeight="251.0" prefWidth="207.0" />
+            <Label layoutX="83.0" layoutY="14.0" prefHeight="31.0" prefWidth="91.0" text="Prieteni" textFill="#3fff29">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Button id="button_mystyle" layoutX="44.0" layoutY="328.0" mnemonicParsing="false" onAction="#BtnDeletePressed" prefHeight="27.0" prefWidth="78.0" text="Stergere" textFill="#686868">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button_mystyle" layoutX="122.0" layoutY="328.0" mnemonicParsing="false" onAction="#BtnReturnPressed" prefHeight="27.0" prefWidth="91.0" text="Continuare" textFill="#686868">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

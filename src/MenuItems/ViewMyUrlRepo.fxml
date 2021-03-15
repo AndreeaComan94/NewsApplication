@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="viewmyurlrepo_background" stylesheets="@../../bin/UserAndPass/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuItemsControllers.ViewMyUrlRepoController">
+   <children>
+      <AnchorPane id="viewmyurlrepo_background" prefHeight="518.0" prefWidth="1058.0" stylesheets="@../../bin/UserAndPass/application.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="497.0" layoutY="22.0" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="471.0" />
+            <Button id="button_mystyle" fx:id="BtnAddManuallyASite" layoutX="282.0" layoutY="81.0" mnemonicParsing="false" onAction="#BtnAddManuallyASitePressed" prefHeight="29.0" prefWidth="188.0" text="Adaugare manuala site" textFill="#125aea">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button_mystyle" fx:id="BtnUpdateExistingSite" layoutX="283.0" layoutY="124.0" mnemonicParsing="false" onAction="#BtnUpdateExistingSitePressed" prefHeight="29.0" prefWidth="188.0" text="Actualizare site existent" textFill="#125aea">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button_mystyle" fx:id="BtnRemoveSelectedSite" layoutX="282.0" layoutY="170.0" mnemonicParsing="false" onAction="#BtnRemoveSelectedSitePressed" prefHeight="29.0" prefWidth="188.0" text="Stergere site selectat" textFill="#125aea">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button_mystyle" fx:id="BtnReturnMenu" layoutX="282.0" layoutY="215.0" mnemonicParsing="false" onAction="#BtnReturnMenuPressed" prefHeight="29.0" prefWidth="188.0" text="Revenire meniu" textFill="#125aea">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <ListView fx:id="urlList" layoutY="68.0" opacity="0.32" prefHeight="200.0" prefWidth="276.0">
+               <effect>
+                  <InnerShadow />
+               </effect></ListView>
+            <Button id="button_signout" fx:id="BtnSignOut" layoutX="988.0" layoutY="29.0" mnemonicParsing="false" onAction="#BtnSignOutPressed" prefHeight="36.0" prefWidth="56.0" text="Sign Out" textFill="#686868" />
+            <MenuBar layoutY="-2.0" prefHeight="25.0" prefWidth="1058.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Fisier">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Salvare URL-uri in format .txt" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Securitate">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Schimbare parola" />
+                  </items>
+                </Menu>
+                <Menu fx:id="BtnAbout" mnemonicParsing="false" text="Ajutor">
+                  <items>
+                    <MenuItem fx:id="BtnAboutProject" mnemonicParsing="false" onAction="#BtnAboutProjectPressed" text="Despre" />
+                  </items>
+                </Menu>
+              </menus>
+               <effect>
+                  <Blend />
+               </effect>
+            </MenuBar>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="23.0" prefHeight="25.0" prefWidth="147.0" text="Gestionare Stiri" textFill="#3a96ff">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="155.0" layoutY="32.0" prefHeight="17.0" prefWidth="97.0" text="Vizualizare Repo" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="43.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="113.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="183.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="799.0" layoutY="483.0" opacity="0.16" radius="35.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="735.0" layoutY="483.0" opacity="0.16" radius="35.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="665.0" layoutY="483.0" opacity="0.16" radius="35.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="596.0" layoutY="483.0" opacity="0.16" radius="35.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="1009.0" layoutY="483.0" opacity="0.44" radius="35.0" stroke="#797979" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="942.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="872.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="803.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="733.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="663.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="593.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="529.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="459.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="390.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="320.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="250.0" layoutY="483.0" opacity="0.2" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="-5.0" layoutY="482.0" opacity="0.24" stroke="BLACK" strokeType="INSIDE" width="1064.0" />
+            <TextArea fx:id="TextAreaDescr" layoutY="294.0" opacity="0.32" prefHeight="151.0" prefWidth="471.0" />
+            <Label alignment="CENTER" layoutX="5.0" layoutY="268.0" prefHeight="25.0" prefWidth="80.0" text="Descriere" textFill="#3a96ff">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="7.0" layoutX="-2.0" layoutY="19.0" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="1059.0" />
+   </children>
+</AnchorPane>

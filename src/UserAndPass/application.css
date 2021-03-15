@@ -1,0 +1,109 @@
+#pane{
+   -fx-background-image: url("resourceFiles/login_image.jpg");
+   -fx-background-repeat:stretch;
+   -fx-background-size:1078 555;
+   -fx-background-position:center center;
+}
+
+
+#menu_background{
+   -fx-background-image: url("resourceFiles/menu_image.jpg");
+   -fx-background-repeat:stretch;
+   -fx-background-size:1078 555;
+   -fx-background-position:center center;
+}
+
+
+#viewmyurlrepo_background{
+   -fx-background-image: url("resourceFiles/viewmyurlrepo_image.jpg");
+   -fx-background-repeat:stretch;
+   -fx-background-size:1078 555;
+   -fx-background-position:center center;
+}
+
+
+#viewcronology_background{
+   -fx-background-image: url("resourceFiles/viewcronology_image.jpg");
+   -fx-background-repeat:stretch;
+   -fx-background-size:1078 555;
+   -fx-background-position:center center;
+}
+
+
+#addcomentstofriendswebsites_background{
+   -fx-background-image: url("resourceFiles/addcommentstofriendswebsites_image.jpg");
+   -fx-background-repeat:stretch;
+   -fx-background-size:1078 555;
+   -fx-background-position:center center;
+}
+
+
+#selectfriends_background{
+   -fx-background-image: url("resourceFiles/selectfriends_image.jpg");
+   -fx-background-repeat:stretch;
+   -fx-background-size:254 381;
+   -fx-background-position:center center;
+}
+
+
+#addsitetext_background{
+   -fx-background-image: url("resourceFiles/selectfriends_image.jpg");
+   -fx-background-repeat:stretch;
+   -fx-background-size:313 309;
+   -fx-background-position:center center;
+}
+
+
+#searchurl_background{
+  -fx-background-color: lightgrey;
+}
+
+
+#button_mystyle{
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #dfe3fa 0%, #dfe3fa 100%),
+        #f0f2fd,
+        #f0f2fd,
+        radial-gradient(center 50% 50%, radius 100%, #f0f2fd, #f0f2fd);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    
+    -fx-font-size: 1.1em;
+}
+
+
+#button_mystyle:hover{
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #dfe3fa 0%, #dfe3fa 100%),
+        #c3cbf7,
+        #c3cbf7,
+        radial-gradient(center 50% 50%, radius 100%, #c3cbf7, #c3cbf7);
+}
+
+
+#button_mystyle:pressed{
+  -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #dfe3fa 0%, #dfe3fa 100%),
+        #96a4f1,
+        #96a4f1,
+        radial-gradient(center 50% 50%, radius 100%, #96a4f1, #96a4f1);
+}
+
+
+#button_signout{
+  -fx-background-color: white, white;
+  -fx-background-radius: 16.4, 15;
+  -fx-background-insets: -1.4, 0;
+  -fx-border-radius: 15;
+  -fx-border-width: 2;
+  -fx-border-color: dimgrey;
+  -fx-padding: 0;
+}
+ 
+ 
+#button_signout:hover{
+  -fx-effect: innershadow(gaussian, dimgrey, 15, 0, 0, 0);
+}
+
+ 

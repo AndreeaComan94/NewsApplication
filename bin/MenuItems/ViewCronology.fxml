@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuItemsControllers.ViewCronologyController">
+   <children>
+      <AnchorPane id="viewcronology_background" prefHeight="518.0" prefWidth="1058.0" stylesheets="@../UserAndPass/application.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="519.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" width="1059.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7c7c7c" height="451.0" layoutX="-2.0" layoutY="14.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="447.0" />
+            <ListView fx:id="UserCronology" layoutX="20.0" layoutY="98.0" prefHeight="311.0" prefWidth="397.0" />
+            <Label layoutX="22.0" layoutY="63.0" text="Evidenta utilizatori" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="20.0" layoutY="47.0" prefHeight="0.0" prefWidth="397.0" />
+            <Button id="button_mystyle" fx:id="BtnMenu" layoutX="309.0" layoutY="57.0" mnemonicParsing="false" onAction="#BtnMenuPressed" prefHeight="29.0" prefWidth="107.0" text="Revenire meniu" textFill="#206eff">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <Separator layoutX="23.0" layoutY="433.0" prefHeight="0.0" prefWidth="397.0" />
+            <Label alignment="CENTER" layoutX="167.0" layoutY="25.0" prefHeight="25.0" prefWidth="71.0" text="Cronologie" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Label>
+            <Button id="button_signout" fx:id="BtnSignOut" layoutX="982.0" layoutY="14.0" mnemonicParsing="false" onAction="#BtnSignOutPressed" prefHeight="36.0" prefWidth="56.0" text="Sign Out" textFill="#686868" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="18.0" prefHeight="25.0" prefWidth="147.0" text="Gestionare Stiri" textFill="#004ba1">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

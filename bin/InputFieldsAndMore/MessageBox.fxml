@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="111.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InputFieldsAndMoreControllers.MessageBoxController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="5.0" prefHeight="19.0" prefWidth="340.0" text="Ati introdus un nume de utilizator sau o parola gresita." textFill="#686868">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="36.0" prefHeight="25.0" prefWidth="127.0" text="Incercati din nou ?" textFill="#686868">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Label>
+      <Button id="button_mystyle" fx:id="BtnYes" layoutX="108.0" layoutY="63.0" mnemonicParsing="false" onAction="#BtnYesPressed" prefHeight="25.0" prefWidth="41.0" stylesheets="@../../bin/UserAndPass/application.css" text="Da" textFill="#686868">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Button>
+      <Button id="button_mystyle" fx:id="BtnNo" layoutX="163.0" layoutY="63.0" mnemonicParsing="false" onAction="#BtnNoPressed" prefHeight="25.0" prefWidth="41.0" stylesheets="@../../bin/UserAndPass/application.css" text="Nu" textFill="#686868">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <Separator layoutX="9.0" layoutY="32.0" prefHeight="0.0" prefWidth="331.0" />
+      <ImageView fitHeight="72.0" fitWidth="74.0" layoutX="266.0" layoutY="36.0">
+         <image>
+            <Image url="@../../bin/UserAndPass/resourceFiles/exclamation.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

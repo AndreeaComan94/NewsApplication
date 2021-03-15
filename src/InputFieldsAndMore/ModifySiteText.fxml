@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InputFieldsAndMoreControllers.ModifySiteTextController">
+   <children>
+      <AnchorPane id="addsitetext_background" prefHeight="111.0" prefWidth="313.0" stylesheets="@../../bin/UserAndPass/application.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="309.0" layoutY="-1.0" opacity="0.52" stroke="BLACK" strokeType="INSIDE" width="313.0" />
+            <TextField fx:id="TxtURL" layoutX="14.0" layoutY="46.0" prefHeight="26.0" prefWidth="189.0" promptText="de ex:  http://www.winbeta.org/">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </TextField>
+            <Button id="button_mystyle" fx:id="BtnConfirmationPressed" layoutX="211.0" layoutY="46.0" mnemonicParsing="false" onAction="#BtnConfirmationPressed" prefHeight="26.0" prefWidth="90.0" text="Confirmare" textFill="#686868">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="21.0" text="Introduceti URL-ul" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="TxtDescription" layoutX="10.0" layoutY="111.0" prefHeight="191.0" prefWidth="289.0" promptText="..." />
+            <Label layoutX="14.0" layoutY="86.0" text="Descriere" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="searchurl_background" prefHeight="1366" prefWidth="768" stylesheets="@../UserAndPass/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuItems.SearchURL">
+   <children>
+        <Button id="button_mystyle" fx:id="BtnAddToRepo" layoutX="14.0" layoutY="609.0" mnemonicParsing="false" onAction="#BtnAddToRepoPressed" prefHeight="27.0" prefWidth="113.0" stylesheets="@../UserAndPass/application.css" text="Adauga in repo" textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Button>
+      <Label layoutX="271.0" layoutY="613.0" text="URL:" textFill="#125aea" />
+      <Separator layoutX="135.0" layoutY="523.0" orientation="VERTICAL" prefHeight="200.0" />
+      <TextField fx:id="TxtURL" layoutX="309.0" layoutY="609.0" prefHeight="26.0" prefWidth="291.0" promptText="URL disponibil doar la click pe button...">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font></TextField>
+      <Button id="button_mystyle" fx:id="BtnViewURL" layoutX="148.0" layoutY="608.0" mnemonicParsing="false" onAction="#BtnViewURLPressed" prefHeight="27.0" prefWidth="113.0" stylesheets="@../UserAndPass/application.css" text="Vizualizare URL" textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <Button id="button_mystyle" fx:id="BtnMenu" layoutX="607.0" layoutY="608.0" mnemonicParsing="false" onAction="#BtnMenuPressed" prefHeight="27.0" prefWidth="75.0" stylesheets="@../UserAndPass/application.css" text="Meniu" textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <Button id="button_mystyle" fx:id="BtnViewRSS" layoutX="688.0" layoutY="608.0" mnemonicParsing="false" onAction="#BtnViewRSSPressed" prefHeight="27.0" prefWidth="69.0" stylesheets="@../UserAndPass/application.css" text="RSS-uri" textFill="#125aea">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+   
+</AnchorPane>

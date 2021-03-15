@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InputFieldsAndMoreControllers.AboutBoxController">
+   <children>
+      <Label layoutX="3.0" layoutY="14.0" text="Tema SCJP" textFill="#ff7b16">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="3.0" layoutY="103.0" prefHeight="151.0" prefWidth="413.0" text="Sa se dezvolte o aplicatie care sa gestioneze stirile pe care un client doreste sa le pastreze.Stirile sunt furnizate ca RSS FEED de site-uri de profil. Clientul isi poate introducere adresa URL a site-urilor de pe care doreste sa culeaga stirile. Clientul se poate conecta manual la site-uri si poate cauta stiri, descarca stiri in repository, sterge stiri din repository, crea/gestiona categorii de stiri definite prin cuvinte cheie. Un client poate acorda drepturi altor clienti de a-i vedea stirile si a face comentarii.Practic aplicatia este stand alone, cu acces la Internet si cu o baza de date MySQL." wrapText="true" />
+      <Label layoutX="3.0" layoutY="40.0" prefHeight="49.0" prefWidth="413.0" text="Facultatea de Matematica si Informatica UNITBV                        Informatica Aplicata 7233 Chihaia Catalin &amp; Cioaca Andreea" textFill="#ff7b16" wrapText="true">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
